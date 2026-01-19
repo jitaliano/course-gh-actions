@@ -22,9 +22,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - run: ls -la
+      - run: pwd && ls -la
       - uses: actions/checkout@v4
-      - run ls -la
+      - run: pwd && ls -la
           
 
       # Runs a single command using the runners shell
